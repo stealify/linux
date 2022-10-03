@@ -1,4 +1,6 @@
-const aptBuildDependencies = `sudo apt install wget make gawk gcc bc bison flex xorriso libelf-dev libssl-dev
+const runQemu = `qemu-system-x86_64 -m 128M -cdrom minimal_linux_live.iso -boot d -vga std`;
+const clean = `rm -rf busybox* isoimage kernel* linux* *.iso syslinux*`;
+const aptBuildDependencies = `sudo apt install wget make gawk gcc bc bison flex xorriso libelf-dev libssl-dev`;
 const minimal = `wget http://kernel.org/pub/linux/kernel/v4.x/linux-4.9.tar.xz
 wget http://busybox.net/downloads/busybox-1.35.0.tar.bz2
 wget http://kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.tar.xz
