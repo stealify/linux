@@ -1,3 +1,4 @@
+const aptBuildDependencies = `sudo apt install wget make gawk gcc bc bison flex xorriso libelf-dev libssl-dev
 const minimal = `wget http://kernel.org/pub/linux/kernel/v4.x/linux-4.9.tar.xz
 wget http://busybox.net/downloads/busybox-1.35.0.tar.bz2
 wget http://kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.tar.xz
